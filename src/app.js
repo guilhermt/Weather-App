@@ -4,7 +4,7 @@ const express = require('express');
 const weather = require('./utils/weather');
 const geocode = require('./utils/geocode');
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5000;
 
 console.log(process.env.PORT);
 
