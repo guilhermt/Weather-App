@@ -4,6 +4,8 @@ const express = require('express');
 const weather = require('./utils/weather');
 const geocode = require('./utils/geocode');
 
+const PORT = process.env.PORT || 3000;
+
 const app = express();
 
 const publicPath = path.join(__dirname, '../public');
@@ -68,4 +70,4 @@ app.get('*', (request, response) => {
   });
 });
 
-app.listen(3000, () => console.log('Server Running on http://localhost:3000'));
+app.listen(PORT, () => console.log(`Server Running on port ${PORT}`));
