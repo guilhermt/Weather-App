@@ -4,7 +4,7 @@ const express = require('express');
 const weather = require('./utils/weather');
 const geocode = require('./utils/geocode');
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3000;
 
 const app = express();
 
@@ -70,4 +70,4 @@ app.get('*', (request, response) => {
   });
 });
 
-// app.listen(PORT, () => console.log(`Server Running on port ${PORT}`));
+app.listen(PORT, () => console.log(`Server Running on port ${PORT}`));
